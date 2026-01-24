@@ -1,0 +1,18 @@
+{
+  "name": "simple-dao-voting-contract",
+  "version": "1.0.0",
+  "description": "Smart contract for decentralized voting",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run deploy.js"
+  },
+  "author": "Web3 Architect",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
