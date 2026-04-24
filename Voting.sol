@@ -40,4 +40,8 @@ contract Voting {
         Proposal memory p = proposals[_index];
         return (p.description, p.voteCount);
     }
+
+    function getProposalCount() external view returns (uint256) {
+        return proposals.length;
+    }
 }

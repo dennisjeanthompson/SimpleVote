@@ -6,7 +6,10 @@
   "scripts": {
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run deploy.js"
+    "deploy": "npx hardhat run deploy.js",
+    "deploy:local": "npx hardhat run deploy.js --network localhost",
+    "web": "cd frontend && npm run dev",
+    "setup": "npm install && cd frontend && npm install"
   },
   "author": "Web3 Architect",
   "license": "MIT",
