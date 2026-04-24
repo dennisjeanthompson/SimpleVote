@@ -8,6 +8,7 @@
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat run deploy.js",
     "deploy:local": "npx hardhat run deploy.js --network localhost",
+    "build": "cd frontend && npm install && npm run build",
     "web": "cd frontend && npm run dev",
     "setup": "npm install && cd frontend && npm install"
   },
