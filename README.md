@@ -1,63 +1,31 @@
-# Simple DAO Voting Contract
+# SimpleVote
 
-A web-ready DAO voting experience built around a simple Solidity governance contract.
-This version adds a modern React + MUI frontend, MetaMask wallet integration, and a clear local deployment flow.
+A modern DAO voting app with a clean React UI, wallet integration, and smart contract governance.
 
-## What’s included
-- Smart contract for proposal creation and one-vote-per-address voting
-- `deploy.js` updates the frontend environment automatically after deployment
-- React frontend with Material UI for a polished governance dashboard
-- Wallet connect, proposal creation, and voting interaction
+## Features
+- 🗳️ Create and vote on proposals
+- 🔐 MetaMask wallet integration  
+- ⚡ Real-time vote tracking
+- 🎨 Modern Material UI dashboard
 
-## Tech Stack
-- Solidity ^0.8.19
-- Hardhat
-- Ethers.js v6
-- React + Vite
-- Material UI
+## Get Started
 
-## Quick setup
-
-From the repository root:
-
+**Install:**
 ```bash
-npm install
-cd frontend
-npm install
+npm run setup
 ```
 
-## Run locally
-
-1. Start a local Hardhat node:
-
+**Run locally:**
 ```bash
 npx hardhat node
-```
-
-2. Deploy the contract to the local network and update the frontend:
-
-```bash
 npm run deploy:local
-```
-
-3. Start the frontend app:
-
-```bash
 npm run web
 ```
 
-4. Open the URL printed by Vite, then connect MetaMask to the local network at `http://127.0.0.1:8545`.
+Open `http://localhost:5173` and connect MetaMask to `http://127.0.0.1:8545`.
 
-## Notes
-- The frontend uses `frontend/.env` to load `VITE_CONTRACT_ADDRESS`
-- If the contract address is still `0x000...0`, rerun `npm run deploy:local`
-- When MetaMask is connected, you can create proposals and vote on them from the dashboard
+**Deploy to Vercel:**
+Push to `main` branch. Contract address must be set in `frontend/.env.production`.
 
-## Commands
-- `npm test` — run Hardhat tests
-- `npm run compile` — compile the smart contract
-- `npm run deploy` — deploy to the default Hardhat network and update frontend env
-- `npm run deploy:local` — deploy to `localhost`
-- `npm run web` — start the frontend UI
-- `npm run setup` — install both root and frontend dependencies
-
+## Tech
+React • Vite • Material UI • Solidity • Hardhat • Ethers.js
